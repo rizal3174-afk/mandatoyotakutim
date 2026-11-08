@@ -56,33 +56,36 @@
         </div>
     </div>
 
-    <!-- Header / Navbar -->
+    <!-- Header / Navbar Responsif -->
     <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
-            <!-- Logo di Kiri -->
-            <div class="flex items-center -ml-3 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Kiri -->
+            <div class="flex items-center">
                 <a href="#" class="flex items-center">
-                    <img src="images/AUTO2000.png" alt="AUTO2000 Member of Astra" class="h-12 w-auto object-contain">
+                    <img src="images/AUTO2000.png" alt="AUTO2000 Member of Astra" class="h-10 sm:h-12 w-auto object-contain">
                 </a>
             </div>
 
-            <!-- Menu di Tengah (Posisi Absolute agar pas di tengah layar) -->
-            <nav class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 font-medium text-sm text-gray-700">
+            <!-- Menu Navigasi (Otomatis menyesuaikan layar HP & Laptop) -->
+            <nav class="hidden lg:flex space-x-6 font-medium text-sm text-gray-700">
                 <a href="#vehicles" class="hover:text-toyota-red transition">Model Mobil</a>
                 <a href="#testdrive" class="hover:text-toyota-red transition">Test Drive</a>
                 <a href="#sosmed" class="hover:text-toyota-red transition">Media Sosial</a>
                 <a href="#kontak" class="hover:text-toyota-red transition">Lokasi & Kontak</a>
             </nav>
 
-            <!-- Logo Kanan Baru (Sisi Kanan) -->
-            <div class="hidden md:flex items-center z-9">
-                <img src="images/logo2.jpg" alt="Logo" class="h-12 w-auto object-contain">
+            <!-- Bagian Kanan / Slot Logo Kanan -->
+            <div class="flex items-center space-x-3">
+                <img src="images/logo2.jpg" alt="Logo" class="h-8 sm:h-10 w-auto object-contain">
             </div>
         </div>
-    </header>
 
-            <!-- Bagian Kanan Dikosongkan (Tombol WA Atas Dihapus) -->
-            <div class="hidden md:block w-32"></div>
+        <!-- Menu khusus tampilan HP (Tampil rapi di bawah logo pada layar kecil) -->
+        <div class="lg:hidden bg-gray-50 border-t border-gray-100 py-2 px-4 flex justify-around text-xs font-medium text-gray-700">
+            <a href="#vehicles" class="hover:text-toyota-red">Model</a>
+            <a href="#testdrive" class="hover:text-toyota-red">Test Drive</a>
+            <a href="#sosmed" class="hover:text-toyota-red">Sosmed</a>
+            <a href="#kontak" class="hover:text-toyota-red">Kontak</a>
         </div>
     </header>
 
