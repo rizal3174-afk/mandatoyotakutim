@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO2000 Sangatta - Manda Sales Toyota Kutai Timur</title>
+    
+<!-- TAMBAHKAN KODE ICON DI SINI -->
+    <link rel="icon" type="image/png" href="images/icon.jpg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Inter & Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        toyota: {
+                            red: '#EB0A1E',
+                            dark: '#1D1D1F',
+                            gray: '#F5F5F7',
+                            card: '#EFEFEF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+    <!-- Top Notice Bar -->
+    <div class="bg-toyota-red text-white text-xs py-2 px-4 text-center font-medium flex justify-between items-center max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <span class="w-full text-center sm:text-left">📍 AUTO2000 Sangatta | Contact Sales: Manda Toyota</span>
+        <div class="hidden sm:flex items-center space-x-4">
+            <a href="https://instagram.com/manda_toyotasangatta" target="_blank" class="hover:text-gray-200"><i class="fab fa-instagram mr-1"></i> manda_toyotasangatta</a>
+            <a href="https://tiktok.com/@manda_toyotasangatta" target="_blank" class="hover:text-gray-200"><i class="fab fa-tiktok mr-1"></i> @manda_toyotasangatta</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
+            <!-- Logo di Kiri -->
+            <div class="flex items-center -ml-3 z-10">
+                <a href="#" class="flex items-center">
+                    <img src="images/AUTO2000.png" alt="AUTO2000 Member of Astra" class="h-12 w-auto object-contain">
+                </a>
+            </div>
+
+            <!-- Menu di Tengah (Posisi Absolute agar pas di tengah layar) -->
+            <nav class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 font-medium text-sm text-gray-700">
+                <a href="#vehicles" class="hover:text-toyota-red transition">Model Mobil</a>
+                <a href="#testdrive" class="hover:text-toyota-red transition">Test Drive</a>
+                <a href="#sosmed" class="hover:text-toyota-red transition">Media Sosial</a>
+                <a href="#kontak" class="hover:text-toyota-red transition">Lokasi & Kontak</a>
+            </nav>
+
+            <!-- Logo Kanan Baru (Sisi Kanan) -->
+            <div class="hidden md:flex items-center z-9">
+                <img src="images/logo2.jpg" alt="Logo" class="h-12 w-auto object-contain">
+            </div>
+        </div>
+    </header>
+
+            <!-- Bagian Kanan Dikosongkan (Tombol WA Atas Dihapus) -->
+            <div class="hidden md:block w-32"></div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative h-[550px] md:h-[650px] bg-gray-900 text-white flex items-end pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-85" style="background-image: url('images/Hilux\ Travo.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+            <div class="max-w-xl text-left">
+                <h1 class="font-heading text-4xl sm:text-6xl font-extrabold tracking-tight leading-none mb-3">ALL NEW HILUX TRAVO & VELOZ HYBRID</h1>
+                <p class="text-gray-200 text-base sm:text-lg mb-6 font-light">Dapatkan penawaran promo harga OTR Kaltim terbaik langsung dari Manda Sales Executive AUTO2000 Sangatta.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20mau%20minta%20pricelist%20dan%20promo%20Toyota%20terbaru" target="_blank" class="bg-emerald-600 text-white hover:bg-emerald-700 px-7 py-3 rounded-full font-bold text-sm tracking-wide transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> TANYA PROMO VIA WA
+                    </a>
+                    <a href="#testdrive" class="border-2 border-white hover:bg-white hover:text-black px-7 py-3 rounded-full font-bold text-sm tracking-wide transition">BOOKING TEST DRIVE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore All Vehicles -->
+    <section id="vehicles" class="py-16 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="font-heading text-3xl font-extrabold tracking-tight">Explore All Vehicles</h2>
+                <p class="text-gray-500 text-sm mt-1">Temukan lini mobil Toyota impian Anda di AUTO2000 Sangatta</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex justify-center space-x-6 text-sm font-semibold text-gray-500 border-b border-gray-200 mb-8 pb-3">
+                <button onclick="filterCategory('all')" class="filter-btn text-toyota-red border-b-2 border-toyota-red pb-3 -mb-3">Semua</button>
+                <button onclick="filterCategory('suv')" class="filter-btn hover:text-black transition">SUV & Commercial</button>
+                <button onclick="filterCategory('mpv')" class="filter-btn hover:text-black transition">MPV / Keluarga</button>
+                <button onclick="filterCategory('hybrid')" class="filter-btn hover:text-black transition">Hybrid EV</button>
+                <button onclick="filterCategory('city')" class="filter-btn hover:text-black transition">City Car</button>
+                <button onclick="filterCategory('Hatchback')" class="filter-btn hover:text-black transition">Hatchback</button>
+                <button onclick="filterCategory('sedan')" class="filter-btn hover:text-black transition">Sedan</button>
+                <button onclick="filterCategory('sport')" class="filter-btn hover:text-black transition">Sport</button>
+            </div>
+
+            <!-- Kartu Mobil -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Hilux Travo -->
+                <div class="vehicle-card commercial suv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Commercial / Double Cabin</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Hilux Double Cabin</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 551.645.000</span> (OTR Kaltim)</p>
+                        <img src="images/travocard1.jpg" alt="Hilux" class="w-full h-45 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Hilux" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hilux Single Cabin -->
+                <div class="vehicle-card commercial suv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Commercial / Single Cabin</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Hilux Single Cabin</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 485.345.000</span> (OTR Kaltim)</p>
+                        <img src="images/Hilux single cab.jpg" alt="Hilux" class="w-full h-45 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Hilux" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hilux Rangga -->
+                <div class="vehicle-card commercial suv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Commercial / Single Cabin</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Rangga</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 254.345.000</span> (OTR Kaltim)</p>
+                        <img src="images/rangga.jpg" alt="Hilux" class="w-full h-45 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Hilux" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Land Cruiser -->
+                <div class="vehicle-card commercial suv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">SUV Heavy Duty</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Land Cruiser</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 2.750.020.000*</span> (OTR Kaltim)</p>
+                        <img src="images/lc1.jpg" alt="Land Cruiser" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Hilux" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Yaris Cross -->
+                <div class="vehicle-card commercial suv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Compact SUV</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Yaris Cross</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 426.420.000*</span> (OTR Kaltim)</p>
+                        <img src="images/yaris cross.jpg" alt="Yaris Cross" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Hilux" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Raize -->
+                <div class="vehicle-card commercial suv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Compact SUV</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Raize</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 426.420.000*</span> (OTR Kaltim)</p>
+                        <img src="images/raize.jpg" alt="Raize" class="w-full h-45 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Hilux" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fortuner -->
+                <div class="vehicle-card suv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">SUV Heavy Duty</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Fortuner 2.8 VRZ</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 665.020.000</span> (OTR Kaltim)</p>
+                        <img src="images/fortunercard1.jpg" alt="Fortuner" class="w-full h-45 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Fortuner" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Innova Zenix -->
+                <div class="vehicle-card mpv hybrid bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-600 font-bold uppercase">Hybrid EV / MPV</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Kijang Innova Zenix</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 501.720.000*</span> (OTR Kaltim)</p>
+                        <img src="images/zenixcard1.jpg" alt="Innova Zenix" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corolla Cross -->
+                <div class="vehicle-card mpv hybrid bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-600 font-bold uppercase">Hybrid EV / SUV</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Corolla Cross</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 645.820.000*</span> (OTR Kaltim)</p>
+                        <img src="images/Corolla Cross.jpg" alt="Corolla Cross" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CHR -->
+                <div class="vehicle-card suv hybrid bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-600 font-bold uppercase">Hybrid EV / SUV</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">CHR</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 545.978.000*</span> (OTR Kaltim)</p>
+                        <img src="images/chr.jpg" alt="CHR" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Avanza -->
+                <div class="vehicle-card mpv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">MPV Favorit Keluarga</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Avanza</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 333.920.000</span> (OTR Kaltim)</p>
+                        <img src="images/avanzacard1.jpg" alt="Avanza" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Alphard -->
+                <div class="vehicle-card mpv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">MPV Favorit Keluarga</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Alphard</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 1.504.745.000</span> (OTR Kaltim)</p>
+                        <img src="images/alphard.jpg" alt="Avanza" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Innova Diesel -->
+                <div class="vehicle-card mpv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">MPV Favorit Keluarga</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Kijang Innova DSL</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 496.020.000</span> (OTR Kaltim)</p>
+                        <img src="images/Innova DSL.jpg" alt="Innova DSL" class="w-full h-45 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rush -->
+                <div class="vehicle-card mpv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">MPV Favorit Keluarga</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Rush</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 357.920.000</span> (OTR Kaltim)</p>
+                        <img src="images/rush.jpg" alt="Rush" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Calya -->
+                <div class="vehicle-card mpv bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">MPV Favorit Keluarga</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Calya</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 225.520.000</span> (OTR Kaltim)</p>
+                        <img src="images/calya.jpg" alt="Calya" class="w-full h-44 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Veloz Hybrid -->
+                <div class="vehicle-card mpv hybrid bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-600 font-bold uppercase">Hybrid EV / MPV</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Veloz Hybrid</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 399.720.000*</span> (OTR Kaltim)</p>
+                        <img src="images/Veloz Hybrid.jpg" alt="Veloz Hybrid" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Agya -->
+                <div class="vehicle-card city car bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">City Car</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Agya</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 247.520.000*</span> (OTR Kaltim)</p>
+                        <img src="images/agya.jpg" alt="Agya="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                <!-- Yaris -->
+                <div class="vehicle-card Hatchback bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Hatchback</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Yaris</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 411.520.000*</span> (OTR Kaltim)</p>
+                        <img src="images/yaris.jpg" alt="Yaris" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                <!-- Vios -->
+                <div class="vehicle-card sedan bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Sedan</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Vios</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 433.320.000*</span> (OTR Kaltim)</p>
+                        <img src="images/vios.jpg" alt="Vios" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Camry -->
+                <div class="vehicle-card sedan bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Sedan</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Camry</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 881.320.000*</span> (OTR Kaltim)</p>
+                        <img src="images/camry hb.jpg" alt="Camry" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                <!-- Camry Hybrid -->
+                <div class="vehicle-card sedan hybrid bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-600 font-bold uppercase">Hybrid EV / sedan</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Camry Hybrid</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 1.024.020.000*</span> (OTR Kaltim)</p>
+                        <img src="images/camry hb.jpg" alt="Camry Hybrid" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                <!-- BZ4X -->
+                <div class="vehicle-card suv hybrid bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-600 font-bold uppercase">EV / SUV</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">BZ4X</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 1.277.320.000*</span> (OTR Kaltim)</p>
+                        <img src="images/bz4x.jpg" alt="BZ4X" class="w-full h-43 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Innova%20Zenix" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                <!-- FT86 -->
+                <div class="vehicle-card sport bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Sport</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">FT86</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp 1.139.220.000</span> (OTR Kaltim)</p>
+                        <img src="images/FT 86.jpg" alt="FT 86" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                <!-- Supra -->
+                <div class="vehicle-card sport bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Sport</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">Supra MK5</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp </span> (OTR Kaltim)</p>
+                        <img src="images/supra.jpg" alt="Supra" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+                <!-- GR Yaris -->
+                <div class="vehicle-card sport bg-toyota-card rounded-lg overflow-hidden p-5 flex flex-col justify-between transition-all hover:shadow-xl border border-gray-200">
+                    <div>
+                        <span class="text-xs font-semibold text-gray-500 uppercase">Sport</span>
+                        <h3 class="font-heading font-extrabold text-2xl text-black mt-1">GR Yaris</h3>
+                        <p class="text-xs text-gray-600 mt-1">Mulai dari <span class="font-bold text-black">Rp </span> (OTR Kaltim)</p>
+                        <img src="images/yarisGR.jpg" alt="GR Yaris" class="w-full h-41 object-cover rounded-md my-4">
+                    </div>
+                    <div>
+                        <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20info%20promo%20Toyota%20Avanza" target="_blank" class="w-full bg-emerald-600 text-white text-center py-2.5 text-xs font-bold rounded hover:bg-emerald-700 transition block flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> Tanya Manda via WA
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Banner Section -->
+    <section id="sosmed" class="py-12 bg-gray-100 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="font-heading text-2xl font-extrabold text-gray-800 mb-2">Ikuti Media Sosial Manda Toyota Sangatta</h3>
+            <p class="text-gray-600 text-sm mb-6">Dapatkan info penyerahan unit, test drive, promo menarik, dan konten video Toyota terbaru setiap hari.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://instagram.com/manda_toyotasangatta" target="_blank" class="bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 text-white font-bold px-6 py-3 rounded-full text-sm flex items-center shadow-md transition">
+                    <i class="fab fa-instagram mr-2 text-xl"></i> Instagram: manda_toyotasangatta
+                </a>
+                <a href="https://tiktok.com/@manda_toyotasangatta" target="_blank" class="bg-black hover:bg-gray-800 text-white font-bold px-6 py-3 rounded-full text-sm flex items-center shadow-md transition">
+                    <i class="fab fa-tiktok mr-2 text-xl"></i> TikTok: @manda_toyotasangatta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Test Drive Section -->
+    <section id="testdrive" class="py-16 bg-toyota-gray">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                <div class="text-center mb-8">
+                    <h2 class="font-heading text-3xl font-extrabold">Booking Test Drive</h2>
+                    <p class="text-gray-500 text-sm mt-1">Konsultasikan kebutuhan mobil Toyota Anda dengan Manda AUTO2000 Sangatta</p>
+                </div>
+                
+                <form onsubmit="handleTestDrive(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">NAMA LENGKAP</label>
+                        <input type="text" id="custName" placeholder="Masukkan nama Anda" required class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:ring-2 focus:ring-toyota-red focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">DOMISILI / KOTA</label>
+                        <input type="text" id="custCity" placeholder="Contoh: Sangatta Utara / Bengalon" required class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:ring-2 focus:ring-toyota-red focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">PILIHAN MOBIL TEST DRIVE YANG TERSEDIA</label>
+                        <select id="carChoice" class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:ring-2 focus:ring-toyota-red focus:outline-none">
+                            <option>Veloz Hybrid</option>
+                            <option>Hilux Rangga</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-sm transition mt-4 flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> KIRIM PESAN KE WA MANDA
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Download Brosur Cepat -->
+    <section class="bg-toyota-dark py-8 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="bg-neutral-900 border border-gray-700 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
+                <div class="text-left">
+                    <h3 class="text-white font-heading font-extrabold text-lg sm:text-xl">Ingin Lihat Pricelist & Spesifikasi Lengkap?</h3>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-1">Download brosur resmi mobil Toyota terbaru langsung ke perangkat Anda.</p>
+                </div>
+                <a href="pdf/Brosur Nov 2026.pdf" download="Brosur Nov 2026.pdf" class="bg-toyota-red hover:bg-red-700 text-white font-bold px-6 py-3 rounded-full text-sm transition flex items-center shrink-0 shadow-md">
+                    <i class="fas fa-file-pdf mr-2 text-lg"></i> DOWNLOAD BROSUR PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WA Button (Pojok Kanan Bawah) -->
+    <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20tanya%20promo%20mobil%20Toyota%20Sangatta" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 transition duration-300 flex items-center justify-center group">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out ml-0 group-hover:ml-2 font-bold text-sm">Chat Manda Sales</span>
+    </a>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-toyota-dark text-white pt-12 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h4 class="font-heading font-extrabold text-xl text-toyota-red mb-3">AUTO2000 SANGATTA</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">Dealer Resmi Toyota untuk Wilayah Sangatta, Kabupaten Kutai Timur & Sekitarnya. Layanan Sales Executive resmi oleh **Manda Toyota**.</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-sm mb-3">LOKASI DEALER RESMI</h5>
+                <p class="text-xs text-gray-400 leading-relaxed mb-2"><i class="fas fa-map-marker-alt text-toyota-red mr-2"></i> Jl. A.W. Syahranie Rt.004 Rw.001 Kel. Tlk. Lingga, Kec. Sangatta Utara, Kabupaten Kutai Timur, Kalimantan Timur 75683</p>
+                <p class="text-xs text-gray-400"><i class="fas fa-clock text-toyota-red mr-2"></i> Senin - Sabtu: 08:00 - 17:00 WITA</p>
+            </div>
+            <div>
+                <h5 class="font-bold text-sm mb-3">KONTAK SALES EXECUTIVE</h5>
+                <p class="text-xs text-gray-400 mb-1"><strong class="text-white">Manda Sales Toyota Sangatta</strong></p>
+                <p class="text-xs text-gray-400 mb-3"><i class="fas fa-phone text-emerald-500 mr-2"></i> WhatsApp: +62 858-2052-5837</p>
+                <div class="flex space-x-3 mb-4">
+                    <a href="https://instagram.com/manda_toyotasangatta" target="_blank" class="text-gray-400 hover:text-white text-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@manda_toyotasangatta" target="_blank" class="text-gray-400 hover:text-white text-lg"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <a href="https://wa.me/6285820525837?text=Halo%20Manda,%20saya%20ingin%20konsultasi%20pembelian%20mobil%20Toyota" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded text-xs">
+                    <i class="fab fa-whatsapp mr-1"></i> Hubungi Manda via WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6 text-xs text-gray-500 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <p>&copy; 2026 AUTO2000 Sangatta - Manda Toyota Kutai Timur. All rights reserved.</p>
+            <p class="sm:text-right">Edited by <span class="text-gray-300 font-semibold">[Rizal Fahroni]</span></p>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Scripts -->
+    <script>
+        function filterCategory(category) {
+            const cards = document.querySelectorAll('.vehicle-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update tab styles
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('text-toyota-red', 'border-b-2', 'border-toyota-red');
+                btn.classList.add('text-gray-500');
+            });
+            event.currentTarget.classList.add('text-toyota-red', 'border-b-2', 'border-toyota-red');
+            event.currentTarget.classList.remove('text-gray-500');
+        }
+
+        function handleTestDrive(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const city = document.getElementById('custCity').value;
+            const car = document.getElementById('carChoice').value;
+
+            const waMessage = `Halo Manda, saya ${name} dari ${city}. Saya tertarik untuk konsultasi / booking test drive mobil Toyota ${car} di AUTO2000 Sangatta.`;
+            const waUrl = `https://wa.me/6285820525837?text=${encodeURIComponent(waMessage)}`;
+
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
